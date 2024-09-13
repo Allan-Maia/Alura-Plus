@@ -1,0 +1,144 @@
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-segundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body{
+    background-color: var(--cor-de-fundo); /* Cor de fundo */
+    color: var(--branco-principal); /* Cor de todas letras */
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.container{ /* responsavel por todas sessões */
+    height: 100vh;
+   display: grid;
+   grid-template-columns: 50% 50%;
+ }
+
+ .container__botao { /* Primeiro botão e alocado com o segundo */
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+ }
+
+ .botao_segundario{ /* Botão segundario */
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+ }
+
+ .container__aviso{ /* Paragrafo */
+    font-size: 12px;
+    color: var(--cinza-segundario);
+ }
+
+ .container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+ }
+
+ .container__imagem{
+    margin: 1em /* topo */ 0 /* direita */ 2em /* baixo */ 0 /* Esquerda */
+ }
+
+ .container__caixa{
+    margin: 0 6em
+ }
+
+ .secundario__imagem{
+    width: 80%;
+    
+ }
+
+ .secundario{
+    align-items: center;
+    margin: 0 10em;
+ }
+
+ .descricao_titulo{
+   font-weight: 700;
+   font-size: 48px;
+   color: var(--branco-principal);
+   margin-bottom: 0.1em;
+ }
+ 
+ .descricao__texto{
+   color: var(--cinza-segundario);
+ }
+
+ 
+.secundario__botao{
+   display: inline-block;
+   margin-top: 1em;
+}
+
+.container__descricao{
+   padding: 2em;
+}
+
+.dispositivos__lista{
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   margin: 5em 0;
+}
+
+.dispositivos{
+   text-align: center;
+}
+
+.dispositivos__titulo{
+   font-size: 48px;
+   color: var(--branco-principal);
+}
+
+.lista__item{
+   font-size: 32px;
+   color: var(--branco-principal);
+  
+}
+
+.propriedades{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   font-size: 16px;
+   list-style: none;
+   margin: 1em;
+   color: var(--branco-principal);
+  
+}
+
+.propriedades_list{
+   text-decoration: none;
+   color: var(--branco-principal);
+}
+
+.propriedades_2{
+   color: var(--cinza-segundario);
+}
+
+.propriedades a:hover{
+color: var(--botao-azul);
+text-decoration: underline;
+}
